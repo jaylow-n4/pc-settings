@@ -1,0 +1,182 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
+[
+	{
+		"key": "cmd+space",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+i",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "-workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "alt+cmd+left",
+		"command": "-workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "f8",
+		"command": "editor.action.marker.next",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+f8",
+		"command": "-editor.action.marker.next",
+		"when": "editorFocus"
+	},
+	{
+		"key": "f8",
+		"command": "-editor.action.marker.nextInFiles",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+f8",
+		"command": "-editor.action.marker.prevInFiles",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+f8",
+		"command": "editor.action.marker.prev",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+alt+f8",
+		"command": "-editor.action.marker.prev",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+cmd+n",
+		"command": "explorer.newFile"
+	},
+	{
+		"key": "ctrl+cmd+d",
+		"command": "explorer.newFolder"
+	},
+	{
+		"key": "shift+cmd+w",
+		"command": "-workbench.action.closeWindow"
+	},
+	{
+		"key": "alt+l",
+		"command": "workbench.action.moveEditorRightInGroup"
+	},
+	{
+		"key": "cmd+k shift+cmd+right",
+		"command": "-workbench.action.moveEditorRightInGroup"
+	},
+	{
+		"key": "alt+h",
+		"command": "workbench.action.moveEditorLeftInGroup"
+	},
+	{
+		"key": "cmd+k shift+cmd+left",
+		"command": "-workbench.action.moveEditorLeftInGroup"
+	},
+	{
+		"key": "alt+h",
+		"command": "-testing.toggleTestingPeekHistory",
+		"when": "testing.isPeekVisible"
+	},
+	{
+		"key": "alt+h",
+		"command": "-editor.action.accessibilityHelpOpenHelpLink",
+		"when": "accessibilityHelpIsShown"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-workbench.action.chat.newChat",
+		"when": "chatIsEnabled && inChat"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-notebook.centerActiveCell",
+		"when": "notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-extension.vim_navigateCtrlL",
+		"when": "editorTextFocus && vim.active && vim.use<C-l> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "quickInput.pagePrevious",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "ctrl+pageup",
+		"command": "-quickInput.pagePrevious",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "quickInput.pageNext",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "ctrl+pagedown",
+		"command": "-quickInput.pageNext",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "extension.vim_ctrl+pageup",
+		"when": "editorTextFocus && vim.active && vim.use<C-pageup> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+pageup",
+		"command": "-extension.vim_ctrl+pageup",
+		"when": "editorTextFocus && vim.active && vim.use<C-pageup> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "extension.vim_ctrl+pagedown",
+		"when": "editorTextFocus && vim.active && vim.use<C-pagedown> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+pagedown",
+		"command": "-extension.vim_ctrl+pagedown",
+		"when": "editorTextFocus && vim.active && vim.use<C-pagedown> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "-workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "-workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "alt+cmd+b",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "cmd+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "cmd+b",
+		"command": "workbench.action.toggleAuxiliaryBar"
+	},
+	{
+		"key": "alt+cmd+b",
+		"command": "-workbench.action.toggleAuxiliaryBar"
+	}
+]

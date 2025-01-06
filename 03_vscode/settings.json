@@ -1,0 +1,259 @@
+{
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[python]": {
+		"diffEditor.ignoreTrimWhitespace": false,
+		"editor.defaultFormatter": "ms-python.autopep8"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"autopep8.args": [
+		"--ignore=W191",
+		"--max-line-length=320"
+	],
+	"clock.dateFormat": "yyyy/mm/dd HH:MM",
+	"debug.toolBarLocation": "commandCenter",
+	"diffEditor.experimental.showMoves": true,
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.accessibilitySupport": "off",
+	"editor.fontFamily": "'PlemolJP HS'",
+	"editor.fontSize": 14,
+	"editor.insertSpaces": false,
+	"editor.largeFileOptimizations": false,
+	"editor.minimap.showSlider": "always",
+	"editor.renderWhitespace": "boundary",
+	"editor.smoothScrolling": true,
+	"editor.suggest.preview": true,
+	"editor.tabCompletion": "on",
+	"eslint.codeActionsOnSave.rules": null,
+	"explorer.compactFolders": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmPasteNative": false,
+	"explorer.sortOrder": "type",
+	"explorer.sortOrderLexicographicOptions": "upper",
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+	"files.associations": {
+		".env": "ini"
+	},
+	"files.eol": "\n",
+	"files.exclude": {
+		"**/.hg": false,
+		"**/.svn": false,
+		"**/CVS": false,
+		"**/Thumbs.db": false,
+		"**/__pycache__": true,
+		"**/node_modules": true,
+		"**/venv": true
+	},
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"flake8.args": [
+		"--max-line-length=320",
+		"--ignore=W191,E302,E303,W292"
+	],
+	"fluent-ui-vscode.compact": true,
+	"git.autofetch": true,
+	"git.enableSmartCommit": true,
+	"indentRainbow.colors": [
+		"rgba(128,  64,  64, 1)", // 赤
+		"rgba(128,  96,  32, 1)", // 橙
+		"rgba(128, 128,  32, 1)", // 黄
+		"rgba( 32, 128,  32, 1)", // 緑
+		"rgba( 32,  64, 128, 1)", // 青
+		"rgba(128,  64, 128, 1)" // 紫
+	],
+	"indentRainbow.excludedLanguages": [
+		"markdown",
+		"plaintext"
+	],
+	"indentRainbow.indicatorStyle": "light",
+	"javascript.format.semicolons": "insert",
+	"markdown.experimental.updateLinksOnPaste": true,
+	"markdown.preview.breaks": true,
+	"markdown.preview.doubleClickToSwitchToEditor": false,
+	"markdown.preview.scrollEditorWithPreview": false,
+	"material-icon-theme.hidesExplorerArrows": true,
+	"python.REPL.enableREPLSmartSend": false,
+	"python.analysis.autoImportCompletions": true,
+	"python.defaultInterpreterPath": "python3",
+	"python.terminal.activateEnvironment": false,
+	"python.terminal.launchArgs": [],
+	"redhat.telemetry.enabled": true,
+	"remote.SSH.remotePlatform": {
+		"Nakagawa_MacBookPro": "macOS"
+	},
+	"settingsSync.ignoredExtensions": [
+		"illixion.vscode-vibrancy-continued",
+		"github.github-vscode-theme",
+		"ms-toolsai.jupyter",
+		"ms-toolsai.vscode-jupyter-cell-tags"
+	],
+	"settingsSync.ignoredSettings": [
+		"workbench.colorTheme",
+		"terminal.integrated.fontFamily",
+		"terminal.external.osxExec",
+		"editor.fontSize",
+		"editor.fontFamily"
+	],
+	"terminal.integrated.accessibleViewPreserveCursorPosition": true,
+	"terminal.integrated.allowedLinkSchemes": [
+		"file",
+		"http",
+		"https",
+		"mailto",
+		"vscode",
+		"vscode-insiders",
+		"docker-desktop"
+	],
+	"terminal.integrated.automationProfile.windows": {},
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.defaultProfile.osx": "bash",
+	"terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+	"terminal.integrated.detectLocale": "on",
+	"terminal.integrated.enableImages": true,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"terminal.integrated.fontFamily": "'FiraMono Nerd Font Mono'",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.gpuAcceleration": "on",
+	"terminal.integrated.macOptionClickForcesSelection": true,
+	"terminal.integrated.mouseWheelZoom": true,
+	"terminal.integrated.profiles.linux": {
+		"bash": {
+			"icon": "terminal-bash",
+			"path": "bash"
+		},
+		"fish": {
+			"icon": "terminal",
+			"overrideName": true,
+			"path": "fish"
+		},
+		"pwsh": {
+			"icon": "terminal-powershell",
+			"path": "pwsh"
+		},
+		"tmux": {
+			"icon": "terminal-tmux",
+			"path": "tmux"
+		},
+		"zsh": {
+			"icon": "terminal",
+			"path": "zsh"
+		}
+	},
+	"terminal.integrated.profiles.osx": {
+		"bash": {
+			"icon": "terminal-bash",
+			"path": "/opt/homebrew/bin/bash"
+		},
+		"fish": {
+			"icon": "terminal",
+			"path": "fish"
+		},
+		"pwsh": {
+			"icon": "terminal-powershell",
+			"path": "pwsh"
+		},
+		"tmux": {
+			"icon": "terminal",
+			"path": "tmux"
+		},
+		"zsh": {
+			"icon": "terminal",
+			"path": "zsh"
+		}
+	},
+	"terminal.integrated.rightClickBehavior": "default",
+	"terminal.integrated.stickyScroll.enabled": true,
+	"terminal.integrated.suggest.enabled": true,
+	"terminal.integrated.tabs.showActions": "always",
+	"terminal.integrated.tabs.showActiveTerminal": "always",
+	"typescript.format.semicolons": "insert",
+	"vim.handleKeys": {
+		"<C-a>": false, //全選択
+		//以下はVimではなく、Windows側のショートカット
+		"<C-c>": false, //コピー
+		//以下はVimのショートカットを利用
+		"<C-d>": true, //下方向へのカーソル移動 ※上方向へのカーソル移動(Ctrl+u)はデフォルト設定でも動作
+		"<C-f>": false, //検索
+		"<C-g>": false, //行数を表示する
+		"<C-h>": false, //タブ移動
+		"<C-k>": false, //他のコマンドに派生する
+		"<C-p>": false, //ファイル検索
+		"<C-v>": false, //貼り付け ※VisualBlockモードはCtrl＋Qで行う
+		"<C-w>": false, //タブを閉じる
+		"<C-x>": false //切り取り
+	},
+	// 検索にマッチした箇所をハイライト
+	"vim.hlsearch": true,
+	// モードごとにステータスバーの色
+	"vim.statusBarColorControl": false,
+	"vim.statusBarColors.commandlineinprogress": [
+		"#86592d",
+		"#fff"
+	],
+	"vim.statusBarColors.easymotioninputmode": [
+		"#86592d",
+		"#fff"
+	],
+	"vim.statusBarColors.easymotionmode": [
+		"#86592d",
+		"#fff"
+	],
+	"vim.statusBarColors.insert": [
+		"#5f0000",
+		"#fff"
+	],
+	"vim.statusBarColors.normal": [
+		"#005f5f",
+		"#fff"
+	],
+	"vim.statusBarColors.replace": [
+		"#000000",
+		"#fff"
+	],
+	"vim.statusBarColors.searchinprogressmode": [
+		"#86592d",
+		"#fff"
+	],
+	"vim.statusBarColors.surroundinputmode": [
+		"#86592d",
+		"#fff"
+	],
+	"vim.statusBarColors.visual": [
+		"#5f00af",
+		"#fff"
+	],
+	"vim.statusBarColors.visualblock": [
+		"#86592d",
+		"#fff"
+	],
+	"vim.statusBarColors.visualline": [
+		"#005f87",
+		"#fff"
+	],
+	// OS のクリップボードと同期
+	"vim.useSystemClipboard": true,
+	"window.customMenuBarAltFocus": false,
+	"window.customTitleBarVisibility": "auto",
+	"window.enableMenuBarMnemonics": false,
+	"window.menuBarVisibility": "visible",
+	"window.systemColorTheme": "dark",
+	"window.titleBarStyle": "custom",
+	"workbench.colorTheme": "Ayu Dark Bordered",
+	"workbench.editor.openPositioning": "last",
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.enableExperiments": false,
+	"workbench.experimental.share.enabled": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.panel.showLabels": false,
+	"workbench.tree.renderIndentGuides": "always"
+}
