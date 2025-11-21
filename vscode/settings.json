@@ -21,16 +21,14 @@
 	"diffEditor.experimental.showMoves": true,
 	"editor.acceptSuggestionOnEnter": "off",
 	"editor.accessibilitySupport": "off",
-	"editor.fontFamily": "'PlemolJP HS'",
-	"editor.fontSize": 14,
-	"editor.insertSpaces": false,
+	"editor.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
+	"editor.guides.bracketPairs": "active",
 	"editor.largeFileOptimizations": false,
 	"editor.minimap.showSlider": "always",
 	"editor.renderWhitespace": "boundary",
 	"editor.smoothScrolling": true,
 	"editor.suggest.preview": true,
 	"editor.tabCompletion": "on",
-	"eslint.codeActionsOnSave.rules": null,
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
@@ -59,21 +57,8 @@
 		"--max-line-length=320",
 		"--ignore=W191,E302,E303,W292"
 	],
-	"fluent-ui-vscode.compact": true,
 	"git.autofetch": true,
 	"git.enableSmartCommit": true,
-	"indentRainbow.colors": [
-		"rgba(128,  64,  64, 1)", // 赤
-		"rgba(128,  96,  32, 1)", // 橙
-		"rgba(128, 128,  32, 1)", // 黄
-		"rgba( 32, 128,  32, 1)", // 緑
-		"rgba( 32,  64, 128, 1)", // 青
-		"rgba(128,  64, 128, 1)" // 紫
-	],
-	"indentRainbow.excludedLanguages": [
-		"markdown",
-		"plaintext"
-	],
 	"indentRainbow.indicatorStyle": "light",
 	"javascript.format.semicolons": "insert",
 	"markdown.experimental.updateLinksOnPaste": true,
@@ -98,12 +83,10 @@
 	],
 	"settingsSync.ignoredSettings": [
 		"workbench.colorTheme",
-		"terminal.integrated.fontFamily",
-		"terminal.external.osxExec",
 		"editor.fontSize",
-		"editor.fontFamily"
+		"editor.fontFamily",
+		"terminal.integrated.fontFamily"
 	],
-	"terminal.integrated.accessibleViewPreserveCursorPosition": true,
 	"terminal.integrated.allowedLinkSchemes": [
 		"file",
 		"http",
@@ -115,16 +98,14 @@
 	],
 	"terminal.integrated.automationProfile.windows": {},
 	"terminal.integrated.defaultProfile.linux": "zsh",
-	"terminal.integrated.defaultProfile.osx": "bash",
-	"terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+	"terminal.integrated.defaultProfile.osx": "fish",
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
 	"terminal.integrated.detectLocale": "on",
 	"terminal.integrated.enableImages": true,
-	"terminal.integrated.enableMultiLinePasteWarning": "never",
-	"terminal.integrated.fontFamily": "'FiraMono Nerd Font Mono'",
-	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.enableMultiLinePasteWarning": "always",
+	"terminal.integrated.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
 	"terminal.integrated.gpuAcceleration": "on",
 	"terminal.integrated.macOptionClickForcesSelection": true,
-	"terminal.integrated.mouseWheelZoom": true,
 	"terminal.integrated.profiles.linux": {
 		"bash": {
 			"icon": "terminal-bash",
@@ -168,6 +149,12 @@
 		"zsh": {
 			"icon": "terminal",
 			"path": "zsh"
+		}
+	},
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"icon": "terminal-powershell",
+			"source": "PowerShell"
 		}
 	},
 	"terminal.integrated.rightClickBehavior": "default",
@@ -247,13 +234,61 @@
 	"window.menuBarVisibility": "visible",
 	"window.systemColorTheme": "dark",
 	"window.titleBarStyle": "custom",
-	"workbench.colorTheme": "Ayu Dark Bordered",
+	"workbench.colorCustomizations": {
+		"editorIndentGuide.activeBackground1": "#fff",
+		"editorIndentGuide.activeBackground2": "#fff",
+		"editorIndentGuide.activeBackground3": "#fff",
+		"editorIndentGuide.activeBackground4": "#fff",
+		"editorIndentGuide.activeBackground5": "#fff",
+		"editorIndentGuide.activeBackground6": "#fff",
+		"editorIndentGuide.background1": "#804040",
+		"editorIndentGuide.background2": "#806020",
+		"editorIndentGuide.background3": "#808020",
+		"editorIndentGuide.background4": "#208020",
+		"editorIndentGuide.background5": "#204080",
+		"editorIndentGuide.background6": "#804080"
+	},
+	"workbench.colorTheme": "Ayu Mirage Bordered",
 	"workbench.editor.openPositioning": "last",
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.enableExperiments": false,
 	"workbench.experimental.share.enabled": true,
-	"workbench.iconTheme": "material-icon-theme",
 	"workbench.panel.showLabels": false,
-	"workbench.tree.renderIndentGuides": "always"
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.settings.applyToAllProfiles": [
+		"editor.fontFamily"
+	],
+	"editor.allowVariableFonts": false,
+	"editor.allowVariableFontsInAccessibilityMode": true,
+	"docker.extension.enableComposeLanguageServer": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"workbench.iconTheme": "material-icon-theme",
+	"[dockercompose]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": "advanced",
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": false,
+			"strings": true
+		},
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[github-actions-workflow]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"security.allowedUNCHosts": [
+		"wsl.localhost"
+	],
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"workbench.secondarySideBar.showLabels": false,
+	"editor.mouseWheelZoom": true,
+	"debug.terminal.clearBeforeReusing": true,
+	"terminal.external.osxExec": "iTerm.app",
+	"terminal.integrated.fontLigatures.enabled": true,
+	"terminal.integrated.localEchoLatencyThreshold": -1
 }
