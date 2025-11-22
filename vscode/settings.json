@@ -94,9 +94,6 @@
     "python.terminal.activateEnvironment": false,
     "python.terminal.launchArgs": [],
     "redhat.telemetry.enabled": true,
-    "remote.SSH.remotePlatform": {
-        "Nakagawa_MacBookPro": "macOS"
-    },
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ],
