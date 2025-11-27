@@ -178,5 +178,55 @@
 	{
 		"key": "alt+cmd+b",
 		"command": "-workbench.action.toggleAuxiliaryBar"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-cursorUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-cursorDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "shift+alt+j",
+		"command": "editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "-editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+k",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+down",
+		"command": "-editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+k",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+up",
+		"command": "-editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+j",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
 	}
 ]

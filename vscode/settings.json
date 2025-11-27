@@ -1,4 +1,7 @@
 {
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
     "[dockercompose]": {
         "editor.autoIndent": "advanced",
         "editor.defaultFormatter": "redhat.vscode-yaml",
@@ -30,6 +33,7 @@
         "--ignore=W191",
         "--max-line-length=320"
     ],
+    "biome.suggestInstallingGlobally": false,
     "clock.dateFormat": "yyyy/mm/dd HH:MM",
     "debug.terminal.clearBeforeReusing": true,
     "debug.toolBarLocation": "commandCenter",
@@ -40,6 +44,7 @@
     "editor.allowVariableFonts": false,
     "editor.allowVariableFontsInAccessibilityMode": true,
     "editor.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
+    "editor.fontLigatures": false,
     "editor.guides.bracketPairs": "active",
     "editor.largeFileOptimizations": false,
     "editor.minimap.showSlider": "always",
@@ -78,6 +83,13 @@
     ],
     "git.autofetch": true,
     "git.enableSmartCommit": true,
+    "github.copilot.enable": {
+        "*": false,
+        "markdown": false,
+        "plaintext": false,
+        "scminput": false,
+        "typescriptreact": false
+    },
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "indentRainbow.indicatorStyle": "light",
@@ -88,12 +100,16 @@
     "markdown.preview.doubleClickToSwitchToEditor": false,
     "markdown.preview.scrollEditorWithPreview": false,
     "material-icon-theme.hidesExplorerArrows": true,
+    "prettier.printWidth": 160,
     "python.REPL.enableREPLSmartSend": false,
     "python.analysis.autoImportCompletions": true,
     "python.defaultInterpreterPath": "python3",
     "python.terminal.activateEnvironment": false,
     "python.terminal.launchArgs": [],
     "redhat.telemetry.enabled": true,
+    "remote.SSH.remotePlatform": {
+        "Nakagawa_MacBookPro": "macOS"
+    },
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ],
@@ -110,7 +126,6 @@
         "editor.fontFamily",
         "terminal.integrated.fontFamily"
     ],
-    "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.allowedLinkSchemes": [
         "file",
         "http",
@@ -121,7 +136,7 @@
         "docker-desktop"
     ],
     "terminal.integrated.automationProfile.windows": {},
-    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.detectLocale": "on",
@@ -190,6 +205,7 @@
     "terminal.integrated.tabs.showActiveTerminal": "always",
     "typescript.format.semicolons": "insert",
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "vim.camelCaseMotion.enable": true,
     "vim.handleKeys": {
         "<C-a>": false, //全選択
         //以下はVimではなく、Windows側のショートカット
@@ -200,6 +216,7 @@
         "<C-g>": false, //行数を表示する
         "<C-h>": false, //タブ移動
         "<C-k>": false, //他のコマンドに派生する
+        "<C-n>": false, //次の候補を選択する
         "<C-p>": false, //ファイル検索
         "<C-v>": false, //貼り付け ※VisualBlockモードはCtrl＋Qで行う
         "<C-w>": false, //タブを閉じる
@@ -207,6 +224,18 @@
     },
     // 検索にマッチした箇所をハイライト
     "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<Esc>"
+            ],
+            "before": [
+                "j",
+                "j"
+            ]
+        }
+    ],
+    "vim.smartRelativeLine": true,
     // モードごとにステータスバーの色
     "vim.statusBarColorControl": false,
     "vim.statusBarColors.commandlineinprogress": [
@@ -275,7 +304,7 @@
         "editorIndentGuide.background5": "#204080",
         "editorIndentGuide.background6": "#804080"
     },
-    "workbench.colorTheme": "Ayu Mirage Bordered",
+    "workbench.colorTheme": "Ayu Dark Bordered",
     "workbench.editor.openPositioning": "last",
     "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.editor.tabSizing": "shrink",
